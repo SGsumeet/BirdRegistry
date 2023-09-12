@@ -1,0 +1,5 @@
+com\example\myproject\controllers\BirdController.class
+com\example\myproject\repository\BirdRepository.class
+com\example\myproject\services\BirdService.class
+com\example\myproject\model\Bird.class
+com\example\myproject\BirdRegistryApplication.class

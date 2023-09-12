@@ -13,6 +13,7 @@ public class Bird {
     private String family;
 
     private String[] continents;
+    @Column(name="Date_Added", updatable=false )
     private String added;
     private boolean visible;
 

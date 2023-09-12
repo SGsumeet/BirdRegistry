@@ -14,38 +14,38 @@ public class BirdController {
     @Autowired
     private BirdService birdService;
 
-    // Create a new user
+    // Create a new bird
     @PostMapping
     public Bird createBird(@RequestBody Bird bird) {
         return birdService.createBird(bird);
     }
 
-    // Get all users
+    // Get all birds
     @GetMapping
     public List<Bird> getAllBirds() {
         return birdService.getAllBirds();
     }
 
-    // Get user by ID
+    // Get bird by ID
     @GetMapping("/{id}")
     public Optional<Bird> getBirdById(@PathVariable Long id) {
         return birdService.getBirdById(id);
     }
 
-    // Update user by ID
+    // Update bird by ID
     @PutMapping("/{id}")
     public Bird updateBird(@PathVariable Long id, @RequestBody Bird birdDetails) {
         return birdService.updateBird(id, birdDetails);
     }
 
-    // Delete all users
+    // Delete all birds
     @DeleteMapping
     public String deleteAllBirds() {
         birdService.deleteAllBirds();
-        return "All users have been deleted successfully.";
+        return "All birds have been deleted successfully.";
     }
 
-    // Delete user by ID
+    // Delete bird by ID
     @DeleteMapping("/{id}")
     public void deleteBird(@PathVariable Long id) {
         birdService.deleteBird(id);
